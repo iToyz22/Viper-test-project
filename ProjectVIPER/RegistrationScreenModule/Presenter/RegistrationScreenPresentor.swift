@@ -8,7 +8,7 @@
 import Foundation
 
 protocol RegistrationScreenPresenterInput: AnyObject {
-
+    
 }
 
 protocol RegistrationScreenPresenterOutput: AnyObject {
