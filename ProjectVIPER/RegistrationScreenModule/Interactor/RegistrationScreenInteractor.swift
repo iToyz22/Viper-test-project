@@ -21,9 +21,9 @@ class RegistrationScreenInteractor: RegistrationScreenInteractorInput {
     weak var output: RegistrationScreenInteractorOutput?
 
     func registration(withLogin login: String, password: String) {
-        let _ = Account(login: login, password: password)
+        let model = Account(login: login, password: password)
 
-        self.output?.didRegistration(withLogin: login)
+        self.output?.didRegistration(withLogin: model.login)
     }
 
 

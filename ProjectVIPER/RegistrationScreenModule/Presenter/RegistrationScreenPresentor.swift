@@ -7,15 +7,15 @@
 
 import Foundation
 
-protocol RegistrationScreenPresenterInput {
-    var output: RegistrationScreenPresenterOutput? { get set }
+protocol RegistrationScreenPresenterInput: AnyObject {
+
 }
 
 protocol RegistrationScreenPresenterOutput: AnyObject {
-
+    var output: RegistrationScreenPresenterOutput? { get set }
 }
 
-final class RegistrationScreenPresenter {
+final class RegistrationScreenPresenter: RegistrationScreenPresenterOutput {
 
     weak var output: RegistrationScreenPresenterOutput?
 
